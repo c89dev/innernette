@@ -9,7 +9,7 @@ function testPage() {
         </div>
     </div>
     <div class="header">
-        <img src="/media/image/logo_l.png">
+        <img src="media/image/logo_l.png">
         <div class="weirdBtnGrp">
              <button>Jibberish</button>
             <button>Jibberish</button>
@@ -29,7 +29,7 @@ function testPage() {
        </div>
     </div>
     <div class="main">
-        <img class='mallTitle' src='/media/image/logo_l.png'>
+        <img class='mallTitle' src='media/image/logo_l.png'>
         <span class="shopHd" style="font-weight: 800;">
         I<span style="font-size:22px">NNERNETTE</span> S<span style="font-size:22px">HOPPING</span> M<span style="font-size:22px">ALL</span>
         </span>
