@@ -1,0 +1,24 @@
+@page {
+    size: A4;
+    margin: 20mm; /* adjust as needed */
+}
+@media print {
+    body {
+    }
+}
+
+.orderWrapper {
+    width: 210mm;
+    height: 297mm;
+    margin: 10mm auto;
+    padding: 10mm;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.orderWrapper .orderForm {
+    justify-self: center;
+    font-size: 32px;
+}

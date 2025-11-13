@@ -5,7 +5,9 @@
 }
 
 body {
-    background: rgb(0 131, 210);
+    background-image: url('/media/image/cinco_walp_1.png');
+    background-repeat: repeat;
+    /* background: rgb(0 131, 210); */
 }
 .hideEl {
     visibility: hidden;
@@ -22,6 +24,9 @@ input {
 }
 
 #app {
+    position: absolute;
+    top: 100px;
+    left: 300px;
     display: grid;
     width: 880px; /* overall window size */
     height: 650px;
@@ -136,6 +141,7 @@ input {
     grid-column: 1/2;
     grid-area: sidebar;
     height: 100%;
+    box-sizing: border-box;
     background-color: hsl(180, 30%, 70%);
 }
 .sidebar .sbCat {

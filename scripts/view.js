@@ -1,7 +1,7 @@
 function testPage() {
     let html = '';
     html = /*HTML*/ `
-    <div class="title">
+    <div class="title" id="title">
         <div class="toolbar">
             <button>X</button>
             <button>□</button>
@@ -49,7 +49,7 @@ function testPage() {
         <p class='price'>STANDARD BLUE JEANS<br>
         Available in Large and Small<br>
         $34.99 plus shipping and handling</p>
-        <button class="printBtn">PRINT</button>
+        <button onclick="reviewOrder()" class="printBtn">PRINT</button>
     `;
     return html;
 }
@@ -130,4 +130,9 @@ function drawPantsMenu() {
 updateView();
 function updateView() {
     app.innerHTML = testPage();
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    const titleBar = document.getElementById('title');
+    titleBar.addEventListener('mousedown', startDrag);
 }
