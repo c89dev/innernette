@@ -29,6 +29,7 @@ viewState = {
             {
                 size: '',
             },
+            {},
         ],
         pantsSize: ['L', 'XL', '2XL', '3XL', '4XL'],
     },
