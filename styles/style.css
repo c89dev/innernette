@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('/media/image/cinco_walp_1.png');
+    background-image: url('../media/image/cinco_walp_1.png');
     background-repeat: repeat;
     /* background: rgb(0 131, 210); */
 }

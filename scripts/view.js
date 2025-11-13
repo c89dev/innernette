@@ -72,22 +72,6 @@ function drawPants() {
 }
 
 function drawPantsMenu() {
-    // let menu = document.createElement('div');
-    // menu.classList.add('menu');
-
-    // let color = document.createElement('select');
-    // let pleats = document.createElement('select');
-    // let para = document.createElement('select');
-    // let cuffs = document.createElement('select');
-    // let size = document.createElement('select');
-
-    // let colorOpt = [`<option>Blue</option>`, `<option>Yellow</option>`];
-    // // colorOpt.forEach((opt) => color.append());
-    // menu.append(color, pleats, para, cuffs, size);
-    // color.innerHTML = colorOpt.join('');
-
-    // color.addEventListener("change", optSelectMouseEnter)
-    // return menu.innerHTML;
     let html = '';
     html = /*HTML*/ `
     <div class="menu">
