@@ -1,42 +1,21 @@
-let isDragging = false;
-let offsetX, offsetY;
-
-const titleBar = document.getElementById('title');
-titleBar.addEventListener('mousedown', startDrag);
-
-function startDrag() {
-    isDragging = true;
-    const win = document.getElementById('app');
-    win.addEventListener('mousedown', (e) => {
-        offsetX = e.clientX - win.offsetLeft;
-        offsetY = e.clientY - win.offsetTop;
-    });
-    document.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            win.style.left = e.clientX - offsetX + 'px';
-            win.style.top = e.clientY - offsetY + 'px';
-        }
-    });
-    document.addEventListener('mouseup', () => (isDragging = false));
+function fakeLoading(id) {
+    console.log('clicc');
+    document.body.style.cursor = "url('./media/image/loading.png'), auto";
+    setTimeout(() => iconClickHandler(id), 500);
 }
 
-function saveOrder(state) {
-    console.log('saving... ', state);
-    sessionStorage.setItem('orderState', JSON.stringify(state));
-}
-function loadOrder() {
-    const state = JSON.parse(sessionStorage.getItem('orderState'));
-    return state;
-}
-
-function reviewOrder() {
-    currentState = viewState.store.pantsOpt;
-    saveOrder(currentState);
-    window.location.href = 'orderform.html';
-}
-
-function goToStoreHome() {
-    window.location.href = 'index.html';
+function iconClickHandler(id) {
+    document.body.style.cursor = "url('./media/image/mouse.png'), auto";
+    console.log('icon clicked with id', id);
+    if (id == 'shortcut0' && !model.apps[0].isRunning) {
+        console.log('Launching The Innernette');
+        app.innerHTML += innernette();
+        model.apps[0].isRunning = true;
+    } else if (id == 'shortcut1' && !model.apps[0].isRunning) {
+        console.log('Launching Nette Tunes');
+        app.innerHTML += netteTunes();
+        model.apps[1].isRunning = true;
+    }
 }
 
 function pantsOptController(index) {
@@ -62,6 +41,23 @@ function pantsOptController(index) {
     } else if (sizes.includes(index)) {
         opt[5].size = index;
     }
+    document.querySelector('.item-container').innerHTML = drawPants();
+}
 
-    updateView();
+// Order form and state
+function reviewOrder() {
+    currentState = viewState.store.pantsOpt;
+    saveOrder(currentState);
+    window.location.href = 'orderform.html';
+}
+function goToStoreHome() {
+    window.location.href = 'index.html';
+}
+function saveOrder(state) {
+    console.log('saving... ', state);
+    sessionStorage.setItem('orderState', JSON.stringify(state));
+}
+function loadOrder() {
+    const state = JSON.parse(sessionStorage.getItem('orderState'));
+    return state;
 }

@@ -1,0 +1,141 @@
+#netteTunesWindow {
+    position: absolute;
+    top: 200px;
+    left: 330px;
+    display: grid;
+    width: 880px; /* overall window size */
+    height: 650px;
+    grid-template-areas:
+        'title title'
+        'header header'
+        'player player';
+    grid-template-rows: 1fr 2fr 8fr;
+    grid-template-columns: 1fr;
+}
+#netteTunesWindow > * {
+    box-shadow: 0 2px 2px 0px rgba(250, 250, 250, 0.3);
+}
+#netteTunesWindow button:active {
+    background-color: #c0c0c0; /* slightly darker */
+    border-color: gray white white gray; /* invert borders */
+}
+
+.netteTunesBg {
+    background-image: url('../media/image/nettetunes_bg.png');
+    box-shadow: 4px 5px 15px 7px rgba(1, 1, 1, 0.1);
+}
+/* PLAYER SECTION */
+#netteTunesWindow .player {
+    display: grid;
+    height: 100%;
+    grid-area: player;
+    grid-template-areas:
+        col1 col2 col3
+        col1 col2 col3
+        col1 col2 col3;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    box-shadow: 18px 22px rgba(1, 1, 1, 0.1);
+    aspect-ratio: 3.3/2;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+
+    overflow: hidden;
+    /* clip-path: ellipse(50% 50% at 50% 50%);  */
+    border: 1rem solid hsl(200, 10%, 75%);
+    border-radius: 70%;
+}
+.player div {
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: hsl(200, 10%, 75%);
+}
+
+/* LEFT SECTION */
+.player .controls {
+    margin-left: -0.6rem;
+    display: grid;
+    grid-area: player;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: lightgray;
+}
+.controls .stop {
+    grid-row: 1/2;
+    background-color: hsl(200, 10%, 75%);
+    box-shadow: inset 2px 2px 5px rgba(1, 1, 1, 0.3);
+}
+.controls .play {
+    position: relative;
+    margin-left: -0.4rem;
+    grid-row: 2/3;
+    background-color: hsl(200, 10%, 75%);
+    box-shadow: inset 2px 2px 5px rgba(1, 1, 1, 0.3);
+}
+.play p {
+    position: absolute;
+    font-size: 66px;
+    margin-left: 2.8rem;
+    margin-top: 0.9rem;
+}
+.controls .pause {
+    grid-row: 3/4;
+    background-color: hsl(200, 10%, 75%);
+    box-shadow: inset 2px 2px 5px rgba(1, 1, 1, 0.3);
+}
+/* MIDDLE SECTION */
+.player .playlist {
+    margin-top: -0.6rem;
+    margin-bottom: -0.6rem;
+    display: grid;
+    grid-area: player;
+    grid-template-rows: 1fr 8fr 4fr;
+    grid-template-columns: 1fr;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border: 6px groove rgba(1, 1, 1, 0.4);
+    background-color: hsl(200, 10%, 75%);
+}
+.playlist .header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 3rem;
+}
+.header p {
+    display: grid;
+    margin-left: 1.4rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-family: montserrat;
+    font-size: 26px;
+    white-space: nowrap;
+    background-color: hsl(200, 10%, 75%);
+}
+.playlist .scroller {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border: 3px solid black white white black;
+    border-style: inset;
+    margin: 1rem;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+.playlist .eq {
+    font-size: 42px;
+    text-align: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+/* RIGHT SECTION */
+.player .playerExtra {
+    display: grid;
+    grid-area: player;
+    grid-row: 1/4;
+    grid-column: 3/4;
+    margin-right: -0.4rem;
+    background-color: hsl(200, 10%, 75%);
+}

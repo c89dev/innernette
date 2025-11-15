@@ -1,7 +1,13 @@
+const desktop = document.getElementById('desktop');
 const app = document.getElementById('app');
 const order = document.getElementById('order');
+const titleBar = document.getElementById('title');
 
 model = {
+    apps: [
+        { id: 0, name: 'innernette', isRunning: false },
+        { id: 1, name: 'nettetunes', isRunning: false },
+    ],
     viewState: {},
     pages: {
         loginPage: {

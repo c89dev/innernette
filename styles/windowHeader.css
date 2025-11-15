@@ -34,6 +34,11 @@ input {
     border: 8px solid gray white white gray; /* classic 3D border */
     padding: 2px 4px;
 }
+
+.innernetteBg {
+    background: linear-gradient(rgb(0, 189, 190), teal);
+    box-shadow: 4px 5px 15px 7px rgba(1, 1, 1, 0.1);
+}
 .title {
     grid-area: title;
     display: grid;
