@@ -17,18 +17,6 @@ select {
     cursor: url('../media/image/mouse.png') 0 0, auto;
 }
 
-#desktop {
-    display: grid;
-    padding: 5rem;
-    row-gap: 2rem;
-    grid-template-rows: repeat(16, 1fr);
-    grid-auto-flow: column;
-    max-height: 100vh;
-    background-image: url('../media/image/cinco_walp_2.jpg');
-    background-repeat: repeat;
-    background-size: 100vh;
-}
-
 input {
     background-color: white;
     border: 8px solid gray white white gray; /* classic 3D border */

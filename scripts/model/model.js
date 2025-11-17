@@ -8,6 +8,32 @@ model = {
         { id: 0, name: 'innernette', isRunning: false },
         { id: 1, name: 'nettetunes', isRunning: false },
     ],
+    music: [
+        {
+            id: 0,
+            artist: 'Lindsey Porch & Ruth Carr',
+            title: 'Spaghetti Again',
+            src: './media/audio/music/track00.wav',
+        },
+        {
+            id: 1,
+            artist: 'Ruth Carr',
+            title: 'Come Over',
+            src: './media/audio/music/track00.wav',
+        },
+        {
+            id: 1,
+            artist: 'Groban Sings Casey',
+            title: 'Horse and Buggy Ride',
+            src: './media/audio/music/track00.wav',
+        },
+        {
+            id: 1,
+            artist: 'Groban Sings Casey',
+            title: 'Hamburgers and Hot Dogs',
+            src: './media/audio/music/track00.wav',
+        },
+    ],
     viewState: {},
     pages: {
         loginPage: {
