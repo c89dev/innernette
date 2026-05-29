@@ -1,0 +1,67 @@
+SHOES:
+    Choose from our wide selection of business shoes,
+    suit shoes, sandals and sneakers. Top quality
+    american made shoes are 100% cotton and are wrinkle
+    free. for ultimate comfort please wash shoes once
+    before wearing. Shoes available in various sizes and
+    colors. Browse through and discover what you
+    have been missing.
+
+SHIRTS 
+    Descr:
+
+    "Choose from our wide selection of business shirts,",
+    "suit shirts, blouses, silk shirts and sweatshirts. Top quality",
+    "american made shirts are 100% cotton and are wrinkle",
+    "free. for ultimate comfort please wash pants once",
+    "before wearing. Shirts available in various sizes and",
+    "colors. Browse through and discover what you",
+    "have been missing.",
+
+    Price:
+        CORPORATE LOUNGE SHIRT
+        Available in Large and Small
+        $10.00 plus shipping and handling
+
+SHIRTS:
+    Choose from our wide selection of business attire,
+    men's pants, ties, shirts and sweaters. Top quality
+    Italian made pants are 100% cotton and are wrinkle
+    free. For ultimate comfort please wash pants once
+    before wearing. Pants available in various sizes and
+    colors. Browse through and discover what you
+    have been missing
+
+COATS:
+    Do you have a job interview in the near future? How
+    about a wedding, a banquet or a beautiful? Check
+    out our rich selection of fine business suits. Choose
+    from a wide variety of colors, cuts and styles.
+    These quality made American tailored suits will
+    make you look official and sharp like you've
+    never been before.
+
+PANTS:
+    "Choose from our wide selection of business slacks,",
+    "suit pants, jeans, shorts and sweatpants.",
+    "Top quality american made pants are 100% cotton and are winkle ",
+    "free. For ultimate comfort please wash pants once",
+    "before wearing Pants available in various sizes and",
+    "colors. Browse through and discover what you",
+    "have been missing",
+
+HATS:
+    Desc:
+
+    Choose from our wide selection of business hats,<br />
+    suit hats, caps, beanies and sweathats. Top quality<br />
+    american made hats are 100% cotton and are wrinkle<br />
+    free. for ultimate comfort please wash pants once<br />
+    before wearing. Hats available in various sizes and<br />
+    colors. Browse through and discover what you<br />
+    have been missing.
+
+    Price:
+        STANDARD HATS
+        Available in Large and Small
+        $34.99 plus shipping and handling
